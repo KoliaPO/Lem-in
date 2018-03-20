@@ -32,16 +32,7 @@ The ant farm is defined by the following lines:
 7-2
 7-4
 6-5
-Which corresponds to the following representation:
 
-              ______________
-            /                \
-    ______[5]----[3]----[1]   |
-  /              |     /      |
-[6]-----[0]----[4]   /        |
- \    _________/ | /          |
-   \ /          [2]----------/
-    [7]---------/
 There are two parts:
 
 The rooms, which are defined by: name coord_x coord_y
@@ -54,29 +45,37 @@ number_of_ants
 the_rooms
 the_links
 Lx-y Lz-w Lr-o ... x, z, r represents the ants’ numbers (going from 1 to number_of_ants) and y, w, o represents the rooms’ names.
-Example:
 
-    [2]
-   / | \
-[0]  |  [1]
-   \ | /
-    [3]
-Console output:
+#Output :
 
 3
-2 5 0
 ##start
-0 1 2
+1 23 3
+2 16 7
+#comment
+3 16 3
+4 16 5
+5 9 3
+6 1 5
+7 4 8
 ##end
-1 9 2
-3 5 4
-0-2
-0-3
+0 9 5
+0-4
+0-6
+1-3
+4-3
+5-2
+3-5
+#another comment
+4-2
 2-1
-3-1
-2-3
+7-6
+7-2
+7-4
+6-5
 
 L1-3 L2-2
-L1-1 L2-1 L3-3
-L3-1
+L1-4 L2-7 L3-3
+L1-0 L2-6 L3-4
+L2-0 L3-0
 
